@@ -45,12 +45,15 @@ nav {
 
     background:
     linear-gradient(
-    rgba(37,99,235,.85),
-    rgba(0,180,255,.85)
-    );
+    rgba(0,0,0,0.55),
+    rgba(0,0,0,0.55)
+    ),
+    url("../images/animal-hospital-banner.jpg");
+
+    background-size:cover;
+    background-position:center;
 
     color:white;
-
     padding:40px;
 
 }
