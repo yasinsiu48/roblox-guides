@@ -3,69 +3,177 @@
 }
 
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f5f7fb;
-    color: #222;
+    margin:0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f4f7fb;
+    color:#1f2937;
 }
 
-header {
-    background: linear-gradient(135deg, #4facfe, #00f2fe);
-    padding: 70px 20px;
-    text-align: center;
-    color: white;
+
+nav {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-header h1 {
-    font-size: 45px;
-    margin-bottom: 15px;
+
+.logo {
+    font-size:22px;
+    font-weight:700;
+    color:#2563eb;
 }
 
-header p {
-    font-size: 20px;
-    max-width: 700px;
-    margin: auto;
+
+.nav-links a {
+    margin-left:25px;
+    text-decoration:none;
+    color:#374151;
+    font-weight:600;
 }
 
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 30px;
-    background: white;
-    color: #008cff;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
+
+.hero {
+
+    min-height:500px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    background:
+    linear-gradient(
+    rgba(37,99,235,.85),
+    rgba(0,180,255,.85)
+    );
+
+    color:white;
+
+    padding:40px;
+
 }
 
-.button:hover {
-    transform: scale(1.05);
+
+
+.hero h1 {
+
+font-size:55px;
+margin-bottom:20px;
+
 }
+
+
+
+.hero p {
+
+font-size:22px;
+max-width:700px;
+
+}
+
+
+
+.discord-btn {
+
+display:inline-block;
+margin-top:30px;
+padding:16px 35px;
+background:white;
+color:#2563eb;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+
+}
+
+
 
 section {
-    background: white;
-    max-width: 900px;
-    margin: 35px auto;
-    padding: 35px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+max-width:1000px;
+margin:50px auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.06);
+
 }
+
+
 
 h2 {
-    color: #008cff;
+
+text-align:center;
+color:#2563eb;
+
 }
 
-li {
-    margin: 12px 0;
+
+
+.cards {
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+background:none;
+box-shadow:none;
+
 }
 
-a {
-    color: #008cff;
+
+
+.card {
+
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+text-align:center;
+
 }
+
+
+
+.guide {
+
+display:block;
+padding:20px;
+background:#2563eb;
+color:white;
+border-radius:15px;
+text-decoration:none;
+text-align:center;
+font-weight:bold;
+
+}
+
+
 
 footer {
-    text-align: center;
-    padding: 25px;
-    color: #777;
+
+text-align:center;
+padding:30px;
+color:#777;
+
+}
+
+
+
+@media(max-width:800px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:35px;
+}
+
+nav{
+flex-direction:column;
+gap:15px;
+}
+
 }
